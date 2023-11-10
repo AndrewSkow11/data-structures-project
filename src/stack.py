@@ -33,5 +33,8 @@ class Stack:
         """
         item = self.top.data
         self.top = self.top.next_node
+
+
+
         return item
 

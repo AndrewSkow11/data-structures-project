@@ -30,3 +30,29 @@ def test_stack():
 # src/linked_list.py      17     17     0%
 # src/queue.py            12     12     0%
 # src/stack.py            15      3    80%
+
+
+# home wprk 2
+def test_pop1():
+    stack = Stack()
+    stack.push('data1')
+    data = stack.pop()
+    assert stack.top is None
+    assert data == 'data1'
+
+
+def test_pop2():
+    stack = Stack()
+    stack.push('data1')
+    stack.push('data2')
+    data = stack.pop()
+    assert stack.top.data == 'data1'
+    assert data == 'data2'
+
+# ---------- coverage: platform darwin, python 3.11.3-final-0 ----------
+# Name                 Stmts   Miss  Cover
+# ----------------------------------------
+# src/__init__.py          0      0   100%
+# src/linked_list.py      17     17     0%
+# src/queue.py            12     12     0%
+# src/stack.py            15      0   100%
